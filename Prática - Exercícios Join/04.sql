@@ -6,7 +6,7 @@ JOIN roles
 ON experiences."roleId" = roles.id
 JOIN companies
 ON experiences."companyId" = companies.id
-WHERE experiences."userId"=50;
+WHERE experiences."userId"=50 AND experiences."endDate" IS NULL;
 
 -- |---id---|---name---|--------role--------|----company----|---startDate---|
 --     1        João      Software Engineer        OLX          2020-06-01
